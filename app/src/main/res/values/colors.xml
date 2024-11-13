@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E90CF</color>
+    <color name="colorPrimaryDark">#00688B</color>
+    <color name="colorAccent">#1E90CF</color>
+    <color name="bgLayout">#ffffff</color>
+    <color name="bgReg">#edf1f4</color>
+    <color name="white_bg">#ffffff</color>
+    <color name="textNewColor">#33373d</color>
+    <color name="hintColor">#cccccc</color>
+    <color name="textFontColor">#999999</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="colorGreen">#5cb85c</color>
+</resources>

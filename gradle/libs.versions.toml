@@ -1,0 +1,48 @@
+[versions]
+agp = "8.5.2"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.3"
+composeBom = "2024.10.00"
+appCompat = "1.7.0"
+constaintLay = "2.1.4"
+material = "1.12.0"
+twilio = "5.7.2"
+drawerLayout = "1.2.0"
+retrofit = "2.9.0"
+convertorJson = "2.9.0"
+splashScreen = "1.0.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = {group = "androidx.appcompat", name="appcompat", version.ref = "appCompat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constaintLay" }
+android-material = { group = "com.google.android.material", name="material", version.ref="material"}
+twilio = { group = "com.twilio", name="voice-android", version.ref = "twilio"}
+drawer-layout = {group = "androidx.drawerlayout", name="drawerlayout", version.ref = "drawerLayout"}
+splash-screen = {group = "androidx.core", name = "core-splashscreen", version.ref="splashScreen"}
+retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref="retrofit"}
+converter-json = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref="convertorJson"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
