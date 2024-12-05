@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <RelativeLayout
+        android:id="@+id/titlelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side_nav_bar"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagephnIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_noimage"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp"
+            />
+
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="30dp"
+
+            android:text="Karthika Rajesh"
+            android:layout_marginLeft="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/white_bg"
+            android:layout_toRightOf="@+id/imagephnIcon"
+
+           />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Mobile : "
+            android:layout_below="@+id/profilename"
+            android:layout_marginLeft="13dp"
+
+            android:textColor="@color/white_bg"
+            android:layout_toRightOf="@+id/imagephnIcon"
+
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+            android:layout_marginLeft="13dp"
+            android:text="Email: "
+            android:layout_toRightOf="@+id/imagephnIcon"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white_bg"
+            android:layout_below="@+id/welcome"
+
+           />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/titlelay"
+        android:scrollbars="none"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="@color/bgLayout"
+            >
+
+            <ImageView
+                android:id="@+id/home_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/home"
+
+                />
+
+            <TextView
+                android:id="@+id/home_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/home_imageView"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textNewColor"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:text="@string/home"
+                android:layout_marginLeft="5dp"
+
+                />
+
+            <View android:id="@+id/agentdivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/home_imageView"
+                android:background="#E6E6E6"
+
+                />
+
+            <ImageView
+                android:id="@+id/key_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/agentdivisor"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/upgrade"
+
+                />
+
+            <TextView
+                android:id="@+id/key_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agentdivisor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/key_imageView"
+                android:paddingRight="10dp"
+                android:text="Upgrade App"
+
+                android:textColor="@color/textNewColor"
+                android:textSize="12sp"
+
+                />
+            <View android:id="@+id/keydivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/key_imageView"
+                android:background="#E6E6E6"
+
+                />
+            <ImageView
+                android:id="@+id/history_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/keydivisor"
+                android:src="@drawable/call_history"
+
+                />
+
+            <TextView
+                android:id="@+id/history_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/history_imageView"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/textNewColor"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:text="Call History"
+
+                android:layout_below="@id/keydivisor"
+                android:layout_marginLeft="5dp"
+
+                />
+            <View android:id="@+id/historydivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/history_imageView"
+                android:background="#E6E6E6"
+
+                />
+            <ImageView
+                android:id="@+id/wallet_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/historydivisor"
+                android:src="@drawable/add_wallet"
+                />
+
+            <TextView
+                android:id="@+id/wallet_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wallet_imageView"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/textNewColor"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:text="Add Funds"
+                android:layout_below="@id/historydivisor"
+                android:layout_marginLeft="5dp"
+
+                />
+            <View android:id="@+id/walletdivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/wallet_imageView"
+                android:background="#E6E6E6"
+
+                />
+            <ImageView
+                android:id="@+id/customer_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/walletdivisor"
+                android:src="@drawable/customer_care"
+
+                />
+
+            <TextView
+                android:id="@+id/customer_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/customer_imageView"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textNewColor"
+                android:paddingRight="10dp"
+                android:textSize="13sp"
+                android:text="Customer Care"
+
+                android:layout_below="@id/walletdivisor"
+                android:layout_marginLeft="5dp"
+
+                />
+            <View android:id="@+id/customerdivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/customer_imageView"
+                android:background="#E6E6E6"
+                />
+            <ImageView
+                android:id="@+id/out_imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/customerdivisor"
+                android:src="@drawable/logout"
+                />
+
+            <TextView
+                android:id="@+id/out_textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/out_imageView"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textNewColor"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:text="Logout"
+                android:layout_below="@id/customerdivisor"
+                android:layout_marginLeft="5dp"
+                />
+            <View android:id="@+id/payoutdivisor"
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/out_imageView"
+                android:background="#E6E6E6"
+
+                android:layout_marginLeft="30dp"
+                />
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

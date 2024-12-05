@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgLayout">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/co_ordinated_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/menu_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/hintColor"
+                app:indicatorSize="48dp"
+                app:trackColor="@color/colorPrimaryDark"
+                app:trackThickness="2dp" />
+            <TextView
+                android:id="@+id/addtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textFontColor"
+                android:text="Enter the key to Upgrade the Anti 420 App."
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/input_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Key."
+                android:layout_below="@id/addtxt"
+                android:textSize="12sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="60sp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="UPGRADE NOW"
+                android:id="@+id/add_money_button"
+                android:layout_below="@+id/input_amount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40sp"
+                android:textColor="@color/white_bg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/rect_blue_bg"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_third"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/updatetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/textFontColor"
+                android:text="Your keyactivated with Anti 420."
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

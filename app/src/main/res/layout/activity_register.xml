@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/co_ordinated_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/bgReg">
+
+        <RelativeLayout
+            android:id="@+id/headlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_arrow"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/reg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white_bg"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/back_image"
+                android:paddingBottom="15dp"
+                android:text="Anti 420 Registration Form"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                >
+            </TextView>
+        </RelativeLayout>
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:id="@+id/mscrollview"
+            android:layout_below="@+id/headlay"
+            >
+            <RelativeLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headlay"
+                >
+
+                <include
+                    android:id="@+id/page1"
+                    layout="@layout/content_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/colorPrimary"
+                    app:indicatorSize="48dp"
+                    app:trackColor="@color/colorPrimaryDark"
+                    app:trackThickness="4dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottomlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rect_blue_bg">
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_bg"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="SUBMIT"
+                android:paddingTop="11dp"
+                >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

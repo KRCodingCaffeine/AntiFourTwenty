@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+    >
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/datalay"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+
+            >
+            <ImageView
+                android:id="@+id/product_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:src = "@drawable/profile"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/datalay"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxxx"
+                android:textColor="@color/textNewColor"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxxx"
+                android:textColor="@color/textNewColor"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View android:id="@+id/listdivisor"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/first"
+        android:background="#E6E6E6"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

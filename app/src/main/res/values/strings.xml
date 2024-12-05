@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">AntiFourTwenty</string>
+    <string name="app_name">Anti 420</string>
+
+    <!--NAV DRAWER LAYOUT-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--MENU ITEM-->
+    <string name="home_menu">V</string>
+    <string name="home">Home</string>
+    <string name="profile_font">&#xe1c7;</string>
+    <string name="pwd_font">I</string>
+    <string name="email_font">m</string>
+    <string name="mobile_font">&#xe217;</string>
+    <string name="wallet_font">&#xe0c9;</string>
+    <string name="history_font">&#xe144;</string>
+    <string name="funds_font">&#xe0c9;</string>
+    <string name="care_menu">&#xe0bc;</string>
+    <string name="logout_menu">f</string>
+    <string name="profile_logo">&#xe1c7;</string>
+    <string name="mobile_logo">e</string>
+
+    <string name="rupee_symbol">\u20B9</string>
+
+
+    <string name="wallet_recharge">To upgrade mail at support@anti420.top.</string>
+    <string name="customer_cate">For any queries, Please write us at support@anti420.top.</string>
+
 </resources>

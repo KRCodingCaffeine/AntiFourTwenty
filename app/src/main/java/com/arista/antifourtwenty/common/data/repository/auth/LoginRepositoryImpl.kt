@@ -1,5 +1,6 @@
 package com.arista.antifourtwenty.common.data.repository.auth
 
+import android.util.Log
 import com.arista.antifourtwenty.common.data.network.auth.ApiService
 import com.arista.antifourtwenty.common.domain.models.auth.LoginRequest
 import com.arista.antifourtwenty.common.domain.models.auth.LoginResponse

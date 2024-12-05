@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#ffffff"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/err_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:textColor="#0076A8"
+        android:textSize="20dp"
+        />
+    <View android:id="@+id/pridivisor"
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/err_title"
+        android:background="#E6E6E6"/>
+
+    <TextView
+        android:id="@+id/err_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:textColor="#778AA7"
+        android:textSize="18dp"
+
+        android:layout_below="@+id/pridivisor" />
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/err_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="OK"
+        android:textColor="#ffffff"
+        android:background="@drawable/rect_blue_bg" />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/err_text"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ok_button"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="CANCEL"
+        android:textColor="#ffffff"
+        android:background="@drawable/rect_blue_bg" />
+</RelativeLayout>
